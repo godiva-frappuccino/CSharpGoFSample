@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSharpGoFSample.AbstractFactory
+{
+    internal class RobotFactory
+    {
+        internal static Robot CreateRobotWithEye(Eye eye)
+        {
+            return new RobotWithEye(eye);
+        }
+        internal static Robot CreateRobotWithArm(Arm arm)
+        {
+            return new RobotWithArm(arm);
+        }
+    }
+}
